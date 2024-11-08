@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Flag Project</title>
+    <style>
+      /* Write your CSS Code here */
+      body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.flag {
+  border: 5px solid white;
+  width: 900px;
+  height: 600px;
+  background-color: #C8102E; /* Red */
+  position: relative;
+}
+
+.flag div {
+  width: 100%;
+  height: 200px;
+  background-color: #0033A0; /* Blue */
+  position: absolute;
+  top: 200px; /* Center the blue band */
+}
+
+.flag div div {
+  width: 200px;
+  height: 200px;
+  background-color: white; /* Circle color */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset to truly center */
+}
+
+.flag p {
+  color: white; /* Text color */
+  text-align: center;
+  margin: 0;
+  position: relative;
+  z-index: 1; /* Place text above other elements */
+}
+.flag div div p {
+        color: #000000;
+        text-align: center;
+        margin-top: 10px;
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        right: 0;
+    }
+        .flag p {  
+        font-size: 70px;  
+        color: white;  
+        margin-bottom: 20px;  
+        }  
+    .flag > div > div > p {  
+      font-size: 70 px;  
+      color: black;  
+    }  
+    </style>
+  </head>
+    </style>
+    
+  </head>
+
+  <!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+-->
+
+  <body>
+    <div class="flag">
+      <p>The Flag</p>
+      <div>
+        <div>
+          <p>of Laos</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
